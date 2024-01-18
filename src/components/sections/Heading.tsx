@@ -19,8 +19,6 @@ const DAYS = [
 function Heading({ date }: { date: string }) {
   const weddingDate = parseISO(date)
 
-  console.log(getDay(weddingDate))
-
   return (
     <Section className={cx('container')}>
       <div className={cx('text-date')}>{format(weddingDate, 'yy.MM.dd')}</div>
